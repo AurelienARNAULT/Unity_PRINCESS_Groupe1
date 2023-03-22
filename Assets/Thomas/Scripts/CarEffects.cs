@@ -3,7 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 public class CarEffects : MonoBehaviour
 {
-    //test
+   
     public CarMovement carMovement;
     public Rigidbody rg;
 
