@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
@@ -8,11 +9,18 @@ public class CarEffects : MonoBehaviour
     public Rigidbody rg;
 
     [Header("Break lights")]
-    public MeshRenderer breakLightLeft;
-    public MeshRenderer breakLightRight;
+    public GameObject breakLightLeft;
+    public GameObject breakLightRight;
     public float breakLightsIntensity = 5f;
     public float normalLightsIntensity = 1f;
-
+    
+    
+    [Header("Smoke effect")]
+    public ParticleSystem smokeLeft;
+    public ParticleSystem smokeRight;
+    public float minSpeedToSmoke = 5f;
+    
+    
     [Header("Tire trails")]
     public TrailRenderer trailLeft;
     public TrailRenderer trailRight;
@@ -44,10 +52,10 @@ public class CarEffects : MonoBehaviour
         audioSource.spatialBlend = 1;
         audioSource.minDistance = 25;
         audioSource.spread = 360;
+        breakLightLeft.SetActive(false);
+        breakLightRight.SetActive(false);
+        
         audioSource.Play();
-
-        // init break light color for break light effect
-        breakColor = breakLightLeft.material.GetColor("_EmissionColor");
     }
 
     void Update()
@@ -56,6 +64,7 @@ public class CarEffects : MonoBehaviour
         UpdateSkidEffect();
         UpdateTurnWheelsEffect();
         UpdateEngineSfx();
+        UpdateSmokeEffect();
 }
 
     private void OnCollisionEnter(Collision collision)
@@ -84,26 +93,16 @@ public class CarEffects : MonoBehaviour
             return;
         }
 
-        if (carMovement.input.y < 0)
+        bool isSpeeding = carMovement.GetSpeed() < 0;
+        if (isSpeeding)
         {
-            if (carMovement.GetSpeed() > 0)
-            {
-                // breaking lights
-                breakLightLeft.material.SetColor("_EmissionColor", breakColor * breakLightsIntensity);
-                breakLightRight.material.SetColor("_EmissionColor", breakColor * breakLightsIntensity);
-            }
-            else
-            {
-                // reverse light
-                breakLightLeft.material.SetColor("_EmissionColor", Color.white * breakLightsIntensity);
-                breakLightRight.material.SetColor("_EmissionColor", breakColor * breakLightsIntensity);
-            }
+            breakLightLeft.SetActive(true);
+            breakLightRight.SetActive(true);
         }
         else
         {
-            // normal lights
-            breakLightLeft.material.SetColor("_EmissionColor", breakColor * normalLightsIntensity);
-            breakLightRight.material.SetColor("_EmissionColor", breakColor * normalLightsIntensity);
+            breakLightLeft.SetActive(false);
+            breakLightRight.SetActive(false);
         }
     }
 
@@ -115,9 +114,19 @@ public class CarEffects : MonoBehaviour
             return;
         }
 
-        bool isDrifting = carMovement.GetSpeed() > 5f && Mathf.Abs(carMovement.input.x) >= minTurnForceToShowTrails;
-        trailLeft.emitting = isDrifting;
-        trailRight.emitting = isDrifting;
+        if (carMovement.input.x > 0 && carMovement.GetSpeed() > 0)
+        {
+            trailLeft.emitting = true;
+            trailRight.emitting = true;
+        }
+        else
+        {
+            trailLeft.emitting = false;
+            trailRight.emitting = false;
+        }
+        
+        
+        
     }
 
     private void UpdateTurnWheelsEffect()
@@ -127,7 +136,6 @@ public class CarEffects : MonoBehaviour
             // Can't play turn wheels effect
             return;
         }
-
         leftWheel.localRotation = Quaternion.Euler(leftWheel.localRotation.eulerAngles.x, 90 + carMovement.input.x * 30f, leftWheel.localRotation.eulerAngles.z);
         rightWheel.localRotation = Quaternion.Euler(rightWheel.localRotation.eulerAngles.x, 90 + carMovement.input.x * 30f, rightWheel.localRotation.eulerAngles.z);
     }
@@ -140,6 +148,36 @@ public class CarEffects : MonoBehaviour
             return;
         }
 
-        audioSource.pitch = engineSfxBasePitch + rg.velocity.magnitude * engineSfxVelocityPitchFactor;
+        if (carMovement.GetSpeed() > 0)
+        {
+            audioSource.mute = false;
+
+        }
+        else
+        {
+            audioSource.mute = true; 
+        }
     }
+    
+    private void UpdateSmokeEffect()
+    {
+        if (!carMovement || !smokeLeft || !smokeRight)
+        {
+            // Can't play skid effect
+            return;
+        }
+
+        bool isSpeeding = carMovement.GetSpeed() > minSpeedToSmoke;
+        if (isSpeeding)
+        {
+            smokeLeft.Play();
+            smokeRight.Play();
+        }
+        else
+        {
+            smokeLeft.Stop();
+            smokeRight.Stop();
+        }
+    }
+    
 }
