@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 3554
+  controlID: 43296
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -48,7 +48,7 @@ MonoBehaviour:
     x: 279
     y: 19
     width: 796
-    height: 372
+    height: 316
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -60,7 +60,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 796, y: 351}
+  m_TargetSize: {x: 796, y: 295}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -77,8 +77,8 @@ MonoBehaviour:
     vZoomLockedByDefault: 0
     m_HBaseRangeMin: -398
     m_HBaseRangeMax: 398
-    m_VBaseRangeMin: -175.5
-    m_VBaseRangeMax: 175.5
+    m_VBaseRangeMin: -147.5
+    m_VBaseRangeMax: 147.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -97,9 +97,9 @@ MonoBehaviour:
       x: 0
       y: 21
       width: 796
-      height: 351
+      height: 295
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 398, y: 175.5}
+    m_Translation: {x: 398, y: 147.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -107,12 +107,12 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -398
-      y: -175.5
+      y: -147.5
       width: 796
-      height: 351
+      height: 295
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 796, y: 372}
+  m_LastWindowPixelSize: {x: 796, y: 316}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 3523
+  controlID: 43297
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 3524
+  controlID: 43298
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -228,7 +228,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 4e47fdff905bfdffea72fdffbc86fdff7e9bfdff7eaffdff36c7fdfffe28feff98a4feff00a8feff0a02ffff601bffff681bffff26e2ffffbef0ffff503b01000e960100f0aa010012ab0100
+      m_ExpandedIDs: fee1fcffdae4fcff76e6fcff82e6fcffe4e7fcfff0e7fcffc2e9fcffcee9fcff9cf3fcff6af7fcff32f8fcffd8f9fcffb0fafcff30fdfcff86fffcff3401fdff7003fdffa004fdff0006fdff7207fdff5c0cfdffaa0ffdffac10fdffc812fdff281afdff7c1bfdff8c29fdff5834fdff6634fdff7434fdff8234fdff9434fdfffc34fdff0835fdff2635fdff4235fdff5e35fdff7235fdff8e35fdffaa35fdffc035fdffe235fdff0436fdff1636fdff3436fdff4036fdff5c36fdff8e36fdff9a36fdffac36fdffd036fdffec36fdff0837fdff1437fdff2037fdff3e37fdff4a37fdff6e37fdffbe37fdffc837fdffd437fdfff037fdff4038fdff4a38fdff5638fdff7438fdff8038fdff9638fdffa238fdffbe38fdffca38fdffec38fdfff838fdff0439fdff1839fdff3439fdff4239fdff6439fdff8839fdffb039fdffcc39fdfff439fdff103afdff2e3afdff503afdff6e3afdff7a3afdffa03afdffa83afdffb03afdffb43afdffb83afdffbc3afdffc03afdffc43afdffc83afdffcc3afdffd03afdffd43afdffd83afdffdc3afdffe03afdffe43afdffe83afdffec3afdfff03afdfff43afdfff83afdfffc3afdff003bfdff043bfdff083bfdff0c3bfdff103bfdff143bfdff183bfdff1c3bfdff203bfdff243bfdff283bfdff2c3bfdff303bfdff543bfdff5c3bfdff643bfdff683bfdff6c3bfdff703bfdff743bfdff783bfdff7c3bfdff803bfdff843bfdff883bfdff8c3bfdff903bfdff943bfdff983bfdff9c3bfdffa03bfdffa43bfdffa83bfdffac3bfdffb03bfdffb43bfdffb83bfdffbc3bfdffc03bfdffc43bfdffc83bfdffcc3bfdffd03bfdffd43bfdffd83bfdffdc3bfdffe03bfdffe43bfdfff63bfdff1e3cfdff503cfdff5c3cfdff7a3cfdff983cfdffea3cfdfff63cfdff203dfdff2c3dfdff483dfdff643dfdff803dfdff8e3dfdffa43dfdffb23dfdffc03dfdffcc3dfdffd83dfdffec3dfdff023efdff163efdff183efdff243efdff403efdff5c3efdff7e3efdffa43efdffda3efdfff63efdff0a3ffdff1e3ffdff463ffdff5a3ffdffaa3ffdffda3ffdffea3ffdfff03ffdff4240fdff5840fdff7440fdff8040fdff9640fdffb240fdffd040fdfff240fdff0e41fdff1a41fdff3c41fdff4841fdff5441fdff6241fdff6e41fdffe041fdfffc41fdff1842fdff3642fdff5242fdff5e42fdff7a42fdff8e42fdffae42fdffcc42fdff2243fdff5243fdff6243fdff6843fdff7a43fdff9843fdffaa43fdffd843fdfffa43fdff1644fdff6644fdff7044fdff9444fdffb044fdffcc44fdffd844fdfff444fdff0045fdff1245fdff2e45fdff5045fdff5e45fdff6a45fdff9445fdffb245fdffb445fdffd645fdffe245fdff2a46fdff3646fdff5246fdff7446fdff8046fdffa446fdffb046fdffc646fdffd846fdfff646fdff1847fdff3447fdff4047fdff4c47fdff4e47fdff905bfdffea72fdffbc86fdff7e9bfdff7eaffdff36c7fdfffe28feff98a4feff00a8feff0a02ffff601bffff681bffff26e2ffffbef0ffff503b01000e9601006ea801004aa90100c8a90100f0aa010012ab0100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -357,7 +357,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 40, y: 74}
+      snapOffset: {x: 40, y: 49}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-transform-toolbar
@@ -561,9 +561,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 32.1509, y: -16.950092, z: 25.122765}
+    m_Target: {x: 0, y: 0, z: 0.5}
     speed: 2
-    m_Value: {x: 32.1509, y: -16.950092, z: 25.122765}
+    m_Value: {x: 0, y: 0, z: 0.5}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -610,13 +610,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.27088386, y: -0.057416733, z: 0.016184023, w: 0.96077216}
+    m_Target: {x: -0.038776737, y: 0.7994089, z: -0.05187439, w: -0.59730744}
     speed: 2
-    m_Value: {x: 0.27088118, y: -0.057416167, z: 0.016183862, w: 0.9607627}
+    m_Value: {x: -0.038776245, y: 0.79939884, z: -0.051873736, w: -0.5972999}
   m_Size:
-    m_Target: 38.691505
+    m_Target: 0.23453231
     speed: 2
-    m_Value: 38.691505
+    m_Value: 0.23453231
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -792,22 +792,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Baptiste/Environment/Low Poly Asia - Far East/Prefabs/Temple
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Baptiste/Environment/Low Poly Asia - Far East/Prefabs/Temple
+  - Assets
   m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\Users\user\OneDrive\Documents\GitHub\Unity_PRINCESS_Groupe1
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 103}
-    m_SelectedIDs: d6780100
-    m_LastClickedID: 96470
-    m_ExpandedIDs: 00000000cc770000ce770000d07700009c9b0000b69b00002c9c0000389c00003c9c0000f09d00001875010032780100fe88010000ca9a3b
+    scrollPos: {x: 0, y: 43}
+    m_SelectedIDs: cc770000
+    m_LastClickedID: 30668
+    m_ExpandedIDs: 00000000cc770000ce7700002c9c0000389c00003c9c0000f09d000032780100fe88010000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -835,7 +835,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000cc770000ce770000d0770000b69b000000ca9a3b
+    m_ExpandedIDs: 00000000cc770000ce7700002c9c0000389c00003c9c0000f09d000032780100fe88010000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -860,10 +860,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 4aaa0100
-    m_LastClickedInstanceID: 109130
-    m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000c6830000b2720000
+    m_SelectedInstanceIDs: 5036fdff
+    m_LastClickedInstanceID: -182704
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: c6230000c6830000b272000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -887,7 +887,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 158}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 96
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
@@ -981,7 +981,7 @@ MonoBehaviour:
     m_CachedPref: -260.6667
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 109130
+  m_LastInspectedObjectInstanceID: -182704
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
