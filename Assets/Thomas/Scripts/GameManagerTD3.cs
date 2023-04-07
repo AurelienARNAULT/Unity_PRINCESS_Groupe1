@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class GameManagerTD3 : MonoBehaviour
 {
+    public GameObject pauseMenu;
+
     public Animator cameraIntroAnimator;
     public CameraFollow followPlayerCamera;
 
@@ -20,6 +22,7 @@ public class GameManagerTD3 : MonoBehaviour
     private void Awake()
     {
         Debug.Log("Start GameManager");
+        pauseMenu.SetActive(false);
         StartIntro();
     }
 
