@@ -56,16 +56,19 @@ public class LapManager : MonoBehaviour
                     player.hasFinished = true;
                     // getting final rank, by finding number of finished players
                     player.rank = playerRanks.FindAll(player => player.hasFinished).Count;
+                    Time.timeScale = 0.2f;
 
                     // if first winner, display its name
                     if (player.rank == 1)
                     {
                         Debug.Log(player.identity.driverName + " won");
                         ui.UpdateLapText(player.identity.driverName + " won");
+                        
                     }
                     else if (player == mainPlayerRank) // display player rank if not winner
                     {
                         ui.UpdateLapText("\nYou finished in " + mainPlayerRank.rank + " place");
+                        
                     }
 
                     if (player == mainPlayerRank) onPlayerFinished.Invoke();

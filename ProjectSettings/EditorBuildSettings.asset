@@ -5,22 +5,28 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path:
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/MainMenu/MainMenu.unity
+    guid: 27b9c3256cac8bb40b2cedb548654768
+  - enabled: 1
+    path: Assets/Weel/Scenes/SampleScene.unity
+    guid: 9e547946ddd4a15409d68b192c170984
+  - enabled: 1
+    path: Assets/Aurelien/Scenes/portail/portail.unity
+    guid: 8aefd853d30af1541958712c5749782c
+  - enabled: 1
+    path: Assets/Baptiste/Scenes/Game.unity
+    guid: e7ad414bb4dc07a44a8a196893173247
   - enabled: 1
     path: Assets/Emilien/Scenes/Introduction/Introduction.unity
     guid: 291288ad4bce68a4988ba01d461f8031
+  - enabled: 1
+    path: Assets/Thomas/Scenes/SampleScene.unity
+    guid: ff0048a969957d34dbefa917235dc4b9
   - enabled: 1
     path: Assets/Emilien/Scenes/Snake/Snake.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Emilien/Scenes/Finition/Finition.unity
     guid: 6f2557f5e59d01043a63e3cd43ebe724
-  - enabled: 1
-    path: Assets/Thomas/Scenes/Menu.unity
-    guid: 8126365cd7b55ec41afd25d3a1867996
-  - enabled: 1
-    path: Assets/Thomas/Scenes/SampleScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}
