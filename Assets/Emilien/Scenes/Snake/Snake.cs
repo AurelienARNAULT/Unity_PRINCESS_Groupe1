@@ -17,7 +17,7 @@ public class Snake : MonoBehaviour
     public void Start(){
         segments = new List<Transform>();
         segments.Add(this.transform);
-    
+        Time.timeScale = 0.3f;
     }
 
     private void Update(){
