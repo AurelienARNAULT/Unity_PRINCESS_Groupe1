@@ -2,6 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad5e3496-092b-4bc1-a784-c1b720bcb72c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_04_2023_18_54__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_04_2023_14_06_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_04_2023_14_06__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MainMenu/MainMenu.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MainMenu/MainMenuSceneLoader.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MainMenu/MainMenuSceneLoader.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MainMenu/PauseManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MainMenu/PauseManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MainMenu/PauseMenu.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MainMenu/PauseMenu.cs.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Weel/Display room.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Weel/Display room/Font.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Weel/Display room/Font/KeepCalm-Medium.ttf" afterDir="false" />
@@ -9,7 +23,6 @@
       <change afterPath="$PROJECT_DIR$/Assets/Weel/Display room/Materials.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Weel/Display room/Materials/Architecture.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Weel/Display room/Materials/Architecture/Air conductor.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Weel/Display room/Materials/Architecture/Air conductor.mat.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Weel/Display room/Materials/Architecture/Black cube.mat" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Weel/Display room/Materials/Architecture/Black cube.mat.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Weel/Display room/Materials/Architecture/Door.mat" afterDir="false" />
@@ -232,7 +245,6 @@
       <change afterPath="$PROJECT_DIR$/Assets/Weel/Display room/READ ME.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Weel/Display room/READ ME.txt.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Weel/Display room/Scene.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Weel/Display room/Scene.unity.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Weel/Display room/SceneSettings.lighting" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Weel/Display room/SceneSettings.lighting.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Weel/Display room/Shaders.meta" afterDir="false" />
@@ -301,9 +313,29 @@
       <change afterPath="$PROJECT_DIR$/Assets/Weel/Display room/Textures/Wood_floor_AO.tga.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Weel/Display room/Textures/cubemap.exr" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Weel/Display room/Textures/cubemap.exr.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Aurelien/Scenes/portail/portail.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Aurelien/Scenes/portail/portail.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Baptiste/Environment/Stylized Pirate Asset Set/Readme.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Baptiste/Environment/Stylized Pirate Asset Set/Readme.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Weel/Display room/Materials/Architecture/Air conductor.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Baptiste/Environment/TropicalEnvironment_LITE/TropicalEnvironmentLite_2020.3.0_URP_1.0.unitypackage.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Weel/Display room/Scene.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Baptiste/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Baptiste/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Emilien/Scenes/Finition/Finition.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Emilien/Scenes/Finition/Finition.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Emilien/Scenes/Introduction/Histoire.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Emilien/Scenes/Introduction/Histoire.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Emilien/Scenes/Introduction/Introduction.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Emilien/Scenes/Introduction/Introduction.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Emilien/Scenes/Introduction/goToGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Emilien/Scenes/Introduction/goToGame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Emilien/Scenes/Snake/CalculScore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Emilien/Scenes/Snake/CalculScore.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Emilien/Scenes/Snake/Snake.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Emilien/Scenes/Snake/Snake.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thomas/Animations/AnimationCamera.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Thomas/Animations/AnimationCamera.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thomas/Scenes/Menu.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thomas/Scenes/Menu.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainMenu/MainMenu.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thomas/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Thomas/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thomas/Scripts/GameManagerTD3.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Thomas/Scripts/GameManagerTD3.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thomas/Scripts/LapManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Thomas/Scripts/LapManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thomas/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Thomas/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Weel/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Weel/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Weel/cam.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Weel/cam.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/GvhProjectSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GvhProjectSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TimeManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TimeManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
@@ -324,15 +356,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -342,6 +374,8 @@
       <option name="presentableId" value="Default" />
       <updated>1680863360011</updated>
       <workItem from="1680863361733" duration="142000" />
+      <workItem from="1680871472135" duration="28000" />
+      <workItem from="1680871534591" duration="22000" />
     </task>
     <servers />
   </component>
