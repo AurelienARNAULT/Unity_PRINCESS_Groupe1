@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: Assets/MainMenu/MainMenu.unity
     guid: 27b9c3256cac8bb40b2cedb548654768
   - enabled: 1
-    path: Assets/Weel/Scenes/SampleScene.unity
-    guid: 9e547946ddd4a15409d68b192c170984
-  - enabled: 1
     path: Assets/Aurelien/Scenes/portail/portail.unity
     guid: 8aefd853d30af1541958712c5749782c
   - enabled: 1
@@ -29,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Emilien/Scenes/Finition/Finition.unity
     guid: 6f2557f5e59d01043a63e3cd43ebe724
+  - enabled: 1
+    path: Assets/Weel/Display room/Scene.unity
+    guid: 4ba7159cdcbe8ab4b8057b6fa0c4d464
   m_configObjects: {}

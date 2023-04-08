@@ -27,7 +27,7 @@ public class CalculScore : MonoBehaviour
     }
 
     private void ChangerDeSceneFin(){
-        SceneManager.LoadScene(7);
+        SceneManager.LoadScene(6);
     }
 
 

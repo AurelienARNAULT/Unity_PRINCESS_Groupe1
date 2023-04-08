@@ -2,24 +2,25 @@
 using UnityEngine.SceneManagement;
 public class MainMenuSceneLoader : MonoBehaviour
 {
-    public void LoadWeel()
+    
+    public void LoadAurelien()
     {
         SceneManager.LoadScene(1);
     }
-    public void LoadAurelien()
+    public void LoadBaptiste()
     {
         SceneManager.LoadScene(2);
     }
-    public void LoadBaptiste()
+    public void LoadEmilien()
     {
         SceneManager.LoadScene(3);
     }
-    public void LoadEmilien()
+    public void LoadThomas()
     {
         SceneManager.LoadScene(4);
     }
-    public void LoadThomas()
+    public void LoadWeel()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(7);
     }
 }

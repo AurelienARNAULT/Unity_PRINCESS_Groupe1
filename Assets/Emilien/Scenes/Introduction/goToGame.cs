@@ -20,6 +20,6 @@ public class goToGame : MonoBehaviour
     }
 
     public void allerAuNiveau(){
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene(5);
     }
 }
