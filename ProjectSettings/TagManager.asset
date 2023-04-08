@@ -8,6 +8,7 @@ TagManager:
   - Food
   - Button
   - Hole
+  - Wall
   layers:
   - Default
   - TransparentFX

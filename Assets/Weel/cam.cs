@@ -6,18 +6,21 @@ public class cam : MonoBehaviour
 {
     public float moveSpeed = 1f; // Vitesse de déplacement de la caméra
     public float rotateSpeed = 20f; // Vitesse de rotation de la caméra
+    public float distanceFromGround = 10f; // Distance de la caméra par rapport au sol
 
-    private float distanceFromGround; // Distance de la caméra par rapport au sol
-
-    // Start is called before the first frame update
     void Start()
     {
         // Calcul de la distance entre la caméra et le sol
         RaycastHit hit;
         if (Physics.Raycast(transform.position, -Vector3.up, out hit, Mathf.Infinity))
         {
-            distanceFromGround = hit.distance;
+            distanceFromGround = hit.distance + (float)0.5;
         }
+        
+        // Ajout du Rigidbody
+        Rigidbody rb = gameObject.AddComponent<Rigidbody>();
+        rb.useGravity = false;
+        
     }
 
     void Update()
@@ -41,5 +44,14 @@ public class cam : MonoBehaviour
         // Rotation de la caméra
         float rotate = Input.GetAxis("Mouse X") * rotateSpeed * Time.deltaTime;
         transform.Rotate(0, rotate, 0);
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Wall"))
+{
+    // Inverse le mouvement de la caméra en cas de collision avec un mur
+    transform.position -= collision.contacts[0].normal * moveSpeed * Time.deltaTime;
+}
     }
 }
