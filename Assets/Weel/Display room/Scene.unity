@@ -242,6 +242,7 @@ GameObject:
   - component: {fileID: 106633836}
   - component: {fileID: 106633835}
   - component: {fileID: 106633834}
+  - component: {fileID: 106633838}
   m_Layer: 0
   m_Name: Quad (1)
   m_TagString: Untagged
@@ -328,6 +329,19 @@ Transform:
   m_Father: {fileID: 986607082}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -179.998, z: 0}
+--- !u!65 &106633838
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106633833}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 1, z: 0.000000019063009}
+  m_Center: {x: -0.00000012665987, y: 0.000000059604645, z: 0.00000011920929}
 --- !u!4 &116044885 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 423546, guid: 0daa77607d604a04597278b172cdd6df, type: 3}
@@ -447,6 +461,7 @@ GameObject:
   - component: {fileID: 160144563}
   - component: {fileID: 160144562}
   - component: {fileID: 160144561}
+  - component: {fileID: 160144564}
   m_Layer: 0
   m_Name: Quad (3)
   m_TagString: Untagged
@@ -533,6 +548,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 160144559}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &160144564
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160144559}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 1, z: 0.000000021125743}
+  m_Center: {x: -0.0000009536743, y: 0, z: 0}
 --- !u!1 &160691180
 GameObject:
   m_ObjectHideFlags: 0
@@ -1150,7 +1178,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f23454f9c0caae41aab9f3e257d6ddd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: 
 --- !u!1 &362007370
 GameObject:
   m_ObjectHideFlags: 0
@@ -1473,6 +1500,7 @@ GameObject:
   - component: {fileID: 496887447}
   - component: {fileID: 496887446}
   - component: {fileID: 496887445}
+  - component: {fileID: 496887448}
   m_Layer: 0
   m_Name: Quad (1)
   m_TagString: Untagged
@@ -1559,6 +1587,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 496887443}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &496887448
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496887443}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000002, y: 1, z: 0.000000013526005}
+  m_Center: {x: -0.00000047683716, y: 0, z: 0.0000009536743}
 --- !u!1 &525461777
 GameObject:
   m_ObjectHideFlags: 0
@@ -2597,6 +2638,39 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 814832418}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &816206609 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 142068, guid: 5405034b844c67643a8f5244d037efa3, type: 3}
+  m_PrefabInstance: {fileID: 931684830}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &816206617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816206609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e62141ac0187e674a88ddf3af0479423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &816206618
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816206609}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &817813079
 GameObject:
   m_ObjectHideFlags: 0
@@ -2706,6 +2780,7 @@ GameObject:
   - component: {fileID: 837946979}
   - component: {fileID: 837946978}
   - component: {fileID: 837946977}
+  - component: {fileID: 837946981}
   m_Layer: 0
   m_Name: Quad (3)
   m_TagString: Untagged
@@ -2792,6 +2867,19 @@ Transform:
   m_Father: {fileID: 986607082}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: -180.00002, z: 0}
+--- !u!65 &837946981
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837946976}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000002, y: 1, z: 0.00000002013985}
+  m_Center: {x: 0.00000031292439, y: 0.000000059604645, z: -0.000002861023}
 --- !u!1001 &894133278
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3357,7 +3445,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f23454f9c0caae41aab9f3e257d6ddd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: 
 --- !u!1001 &1042537930
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3610,6 +3697,7 @@ GameObject:
   - component: {fileID: 1195917715}
   - component: {fileID: 1195917714}
   - component: {fileID: 1195917713}
+  - component: {fileID: 1195917716}
   m_Layer: 0
   m_Name: Quad
   m_TagString: Untagged
@@ -3696,6 +3784,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1195917711}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1195917716
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195917711}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 1, z: 0.000000018533683}
+  m_Center: {x: 0.0000009536743, y: 0.00000011920929, z: 0.00000047683716}
 --- !u!1 &1268362840 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: 4fcac74afd2d0f14f8264cb0163a0a16, type: 3}
@@ -4028,6 +4129,7 @@ GameObject:
   - component: {fileID: 1670291249}
   - component: {fileID: 1670291248}
   - component: {fileID: 1670291247}
+  - component: {fileID: 1670291250}
   m_Layer: 0
   m_Name: Quad (2)
   m_TagString: Untagged
@@ -4114,6 +4216,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670291245}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1670291250
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670291245}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000002, y: 1, z: 0.000000017842467}
+  m_Center: {x: 0.00000047683716, y: 0.000000059604645, z: -0.0000009536743}
 --- !u!1 &1732566592
 GameObject:
   m_ObjectHideFlags: 0
@@ -4667,6 +4782,7 @@ GameObject:
   - component: {fileID: 1963110733}
   - component: {fileID: 1963110732}
   - component: {fileID: 1963110731}
+  - component: {fileID: 1963110735}
   m_Layer: 0
   m_Name: Quad
   m_TagString: Untagged
@@ -4753,6 +4869,19 @@ Transform:
   m_Father: {fileID: 986607082}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1963110735
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963110730}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000002, y: 1, z: 0.00000002066372}
+  m_Center: {x: -0.00000037252903, y: 0, z: 0.000002861023}
 --- !u!1 &1984485852
 GameObject:
   m_ObjectHideFlags: 0
@@ -4981,6 +5110,7 @@ GameObject:
   - component: {fileID: 1991743865}
   - component: {fileID: 1991743864}
   - component: {fileID: 1991743863}
+  - component: {fileID: 1991743867}
   m_Layer: 0
   m_Name: Quad (2)
   m_TagString: Untagged
@@ -5067,6 +5197,19 @@ Transform:
   m_Father: {fileID: 986607082}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -359.998, z: 0}
+--- !u!65 &1991743867
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991743862}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000002, y: 1, z: 0.000000018859282}
+  m_Center: {x: 0.00000013411045, y: 0.000000059604645, z: -0.0000010728836}
 --- !u!1 &2007846200
 GameObject:
   m_ObjectHideFlags: 0
