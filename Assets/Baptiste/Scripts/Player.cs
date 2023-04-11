@@ -53,8 +53,6 @@ using TMPro;
           _rigidbody.angularVelocity = Vector3.zero;
 
           audioSource.Play();
-          _shots++;
-          shotsText.text = "Nombre de tirs: " + _shots.ToString();
           ProcessOnMouseDown();
           ProcessOnMouseUp();
           ProcessOnMouseHold();
@@ -71,6 +69,8 @@ using TMPro;
 
             _currentForce = 0;
             _pingPongTime = 0;
+            _shots++;
+            shotsText.text = "Nombre de tirs: " + _shots.ToString();
           }
         }
 
