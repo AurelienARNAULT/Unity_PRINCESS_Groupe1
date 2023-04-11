@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using TMPro;
 
   [RequireComponent(typeof(Rigidbody))]
   [RequireComponent(typeof(LineRenderer))]
@@ -22,6 +23,9 @@ using Cinemachine;
       private float _pingPongTime;
       private bool _canShoot;
       private float _timeInHole;
+      public AudioSource audioSource;
+      public int _shots = 0;
+      public TextMeshProUGUI shotsText;
 
     private void Awake()
     {
@@ -48,6 +52,9 @@ using Cinemachine;
           _rigidbody.velocity = Vector3.zero;
           _rigidbody.angularVelocity = Vector3.zero;
 
+          audioSource.Play();
+          _shots++;
+          shotsText.text = "Nombre de tirs: " + _shots.ToString();
           ProcessOnMouseDown();
           ProcessOnMouseUp();
           ProcessOnMouseHold();
