@@ -23,4 +23,9 @@ public class TrackManager : MonoBehaviour
 
           Player.SpawnTo(Tracks[_currentTrack].SpawnPoint.position);
         }
+
+        public void Respawn()
+        {
+            Player.SpawnTo(Tracks[_currentTrack].SpawnPoint.position);
+        }
 }

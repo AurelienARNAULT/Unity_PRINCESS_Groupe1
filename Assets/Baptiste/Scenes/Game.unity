@@ -5843,7 +5843,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2292325736434307291, guid: 9fa143df83576a24e87ee2630bd02960, type: 3}
   m_PrefabInstance: {fileID: 2292325735768620162}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 701507912}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c3c4bd4b5fd52f84291b4a0a02386360, type: 3}
@@ -6092,6 +6092,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d6ee73ce0cc2f34fb0943aee27b056a, type: 3}
+--- !u!1 &701507912 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2292325736434307285, guid: 9fa143df83576a24e87ee2630bd02960, type: 3}
+  m_PrefabInstance: {fileID: 2292325735768620162}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &701507915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701507912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 543f9c4152b254e4bb1dac040dceaa82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705550138
 GameObject:
   m_ObjectHideFlags: 0
@@ -14192,7 +14209,7 @@ GameObject:
   - component: {fileID: 1892531296}
   m_Layer: 0
   m_Name: Island
-  m_TagString: Untagged
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14404,10 +14421,10 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1892531294}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
 --- !u!1001 &1900442076
@@ -15336,7 +15353,7 @@ GameObject:
   - component: {fileID: 2007261327}
   m_Layer: 0
   m_Name: Terrain
-  m_TagString: Untagged
+  m_TagString: Terrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -16723,6 +16740,30 @@ PrefabInstance:
     - target: {fileID: 2292325736434307290, guid: 9fa143df83576a24e87ee2630bd02960, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5295903924935542302, guid: 9fa143df83576a24e87ee2630bd02960, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5566944842409025077, guid: 9fa143df83576a24e87ee2630bd02960, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6219455598442590301, guid: 9fa143df83576a24e87ee2630bd02960, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7371244183833015729, guid: 9fa143df83576a24e87ee2630bd02960, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7371244183858413641, guid: 9fa143df83576a24e87ee2630bd02960, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459029729915450553, guid: 9fa143df83576a24e87ee2630bd02960, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fa143df83576a24e87ee2630bd02960, type: 3}

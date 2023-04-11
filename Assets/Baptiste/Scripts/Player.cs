@@ -102,8 +102,21 @@ using Cinemachine;
           }
         }
 
+        private void OnCollisionEnter(Collision collision)
+            {
+                if (collision.gameObject.CompareTag("Terrain"))
+                {
+                    // La balle de golf a touché le terrain, respawn
+                    TrackManager.Respawn();
+                }
+            }
+
         private void OnTriggerEnter(Collider other)
             {
+            if (other.CompareTag("Respawn"))
+                {
+                   _timeInHole = 0;
+                }
               if (other.CompareTag("Hole"))
               {
                 _timeInHole = 0;
@@ -112,6 +125,17 @@ using Cinemachine;
 
             private void OnTriggerStay(Collider other)
             {
+
+              if (other.CompareTag("Respawn"))
+               {
+                  _timeInHole += Time.deltaTime;
+
+                   if (_timeInHole > 1.5f)
+                   {
+                      TrackManager.Respawn();
+                   }
+
+               }
               if (other.CompareTag("Hole"))
               {
                 _timeInHole += Time.deltaTime;
@@ -125,6 +149,10 @@ using Cinemachine;
 
             private void OnTriggerExit(Collider other)
             {
+              if (other.CompareTag("Respawn"))
+                            {
+                              _timeInHole = 0;
+                            }
               if (other.CompareTag("Hole"))
               {
                 _timeInHole = 0;
