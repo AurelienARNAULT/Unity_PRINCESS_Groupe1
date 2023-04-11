@@ -9,21 +9,20 @@ public class DetectWall : MonoBehaviour
 
     private void Update()
     {
-       if (!sceneLoaded)
-    {
         // Lance un rayon devant l'objet
+        if(!sceneLoaded){
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.forward, out hit, detectRange, wallLayer))
         {
             // Si le rayon a touché un mur, affiche un message dans la console
             Debug.Log("Attention, un mur est proche !");
             
-            // Charge la scène
-            SceneManager.LoadScene(0);
-            
             // Définir "sceneLoaded" sur "true"
             sceneLoaded = true;
         }
+        }
+        if(sceneLoaded){
+            SceneManager.LoadScene(0);
+        }
     }
-}
 }
