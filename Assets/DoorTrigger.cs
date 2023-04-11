@@ -1,14 +1,15 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class DoorTrigger : MonoBehaviour
 {
-    // Le nom de la scène à charger lorsque la porte est traversée
-
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Doors"))
+        Debug.Log("DoorTrigger");
+        if (other.gameObject.tag == "Player")
         {
             SceneManager.LoadScene(0);
         }
