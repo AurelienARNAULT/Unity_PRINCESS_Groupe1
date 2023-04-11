@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PrincessMovement : MonoBehaviour
+public class PrincessMovement : PortalTraveller
 {
     [SerializeField]
     private float maximumSpeed;
@@ -115,6 +115,7 @@ public class PrincessMovement : MonoBehaviour
         if (isGrounded == false)
         {
             Vector3 velocity = movementDirection * inputMagnitude * jumpHorizontalSpeed;
+            velocity = AdjustVelocityToSlope(velocity);
             velocity.y = ySpeed;
 
             characterController.Move(velocity * Time.deltaTime);
@@ -123,10 +124,11 @@ public class PrincessMovement : MonoBehaviour
 
     private void OnAnimatorMove()
     {
-        Debug.Log("isGrounded:" + isGrounded);
+        //Debug.Log("isGrounded:" + isGrounded);
         if (isGrounded)
         {
             Vector3 velocity = animator.deltaPosition * maximumSpeed;
+            velocity = AdjustVelocityToSlope(velocity);
             velocity.y = ySpeed * Time.deltaTime;
 
             characterController.Move(velocity);
@@ -143,5 +145,23 @@ public class PrincessMovement : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.None;
         }
+    }
+
+    private Vector3 AdjustVelocityToSlope(Vector3 velocity)
+    {
+        var ray = new Ray(transform.position, Vector3.down);
+
+        if (Physics.Raycast(ray, out RaycastHit hitInfo, 0.1f))
+        {
+            var slopeRotation = Quaternion.FromToRotation(Vector3.up, hitInfo.normal);
+            var adjustedVelocity = slopeRotation * velocity;
+
+            if (adjustedVelocity.y < 0)
+            {
+                return adjustedVelocity;
+            }
+        }
+
+        return velocity;
     }
 }
