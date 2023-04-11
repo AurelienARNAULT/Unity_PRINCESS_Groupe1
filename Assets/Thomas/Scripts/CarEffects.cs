@@ -62,7 +62,7 @@ public class CarEffects : MonoBehaviour
     {
         UpdateBrakeLightEffect();
         UpdateSkidEffect();
-        UpdateTurnWheelsEffect();
+        //UpdateTurnWheelsEffect();
         UpdateEngineSfx();
         UpdateSmokeEffect();
 }
@@ -81,8 +81,7 @@ public class CarEffects : MonoBehaviour
         }
         audioSource.pitch = Random.Range(0.85f, 1f);
         // the more the collisison is big, the more the sound velocity
-        float volumeScale = (collision.relativeVelocity.magnitude / divide) - minus;
-        audioSource.PlayOneShot(collisionSfxs[Random.Range(0, collisionSfxs.Length - 1)], volumeScale);
+        audioSource.PlayOneShot(collisionSfxs[Random.Range(0, collisionSfxs.Length - 1)], 0.2f);
     }
 
     private void UpdateBrakeLightEffect()
@@ -136,8 +135,9 @@ public class CarEffects : MonoBehaviour
             // Can't play turn wheels effect
             return;
         }
-        leftWheel.localRotation = Quaternion.Euler(leftWheel.localRotation.eulerAngles.x, 90 + carMovement.input.x * 30f, leftWheel.localRotation.eulerAngles.z);
-        rightWheel.localRotation = Quaternion.Euler(rightWheel.localRotation.eulerAngles.x, 90 + carMovement.input.x * 30f, rightWheel.localRotation.eulerAngles.z);
+        float wheelRotation = 90f + carMovement.input.x * 30f;
+        leftWheel.localRotation = Quaternion.Euler(leftWheel.localRotation.eulerAngles.x, wheelRotation, leftWheel.localRotation.eulerAngles.z);
+        rightWheel.localRotation = Quaternion.Euler(rightWheel.localRotation.eulerAngles.x, wheelRotation, rightWheel.localRotation.eulerAngles.z);
     }
 
     private void UpdateEngineSfx()

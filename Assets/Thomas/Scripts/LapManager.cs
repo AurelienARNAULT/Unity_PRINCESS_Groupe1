@@ -7,10 +7,16 @@ public class LapManager : MonoBehaviour
     public List<Checkpoint> checkpoints;
     public int totalLaps = 3;
     public UIManager ui;
+    
+    public GameObject finishMenu;
+    public FinishMenuManager uiFinish;
+
 
     private List<PlayerRank> playerRanks = new List<PlayerRank>();
     private PlayerRank mainPlayerRank;
     public UnityEvent onPlayerFinished = new UnityEvent();
+    
+    public GameManagerTD3 gameManager;
 
     void Start()
     {
@@ -21,6 +27,7 @@ public class LapManager : MonoBehaviour
         }
         ListenCheckpoints(true);
         ui.UpdateLapText("Lap "+ playerRanks[0].lapNumber + " / " + totalLaps);
+        finishMenu.SetActive(false);
         mainPlayerRank = playerRanks.Find(player => player.identity.gameObject.tag == "Player");
     }
 
@@ -57,18 +64,23 @@ public class LapManager : MonoBehaviour
                     // getting final rank, by finding number of finished players
                     player.rank = playerRanks.FindAll(player => player.hasFinished).Count;
                     Time.timeScale = 0.2f;
+                    
+                    gameManager.audioSource.pitch = 0.6f;
 
                     // if first winner, display its name
                     if (player.rank == 1)
                     {
                         Debug.Log(player.identity.driverName + " won");
-                        ui.UpdateLapText(player.identity.driverName + " won");
+                        
+                        finishMenu.SetActive(true);
+                        uiFinish.updateFinishText(player.identity.driverName + " won!!");
                         
                     }
                     else if (player == mainPlayerRank) // display player rank if not winner
                     {
+                        finishMenu.SetActive(true);
+                        uiFinish.updateFinishText("You finished in " + mainPlayerRank.rank + " place");
                         ui.UpdateLapText("\nYou finished in " + mainPlayerRank.rank + " place");
-                        
                     }
 
                     if (player == mainPlayerRank) onPlayerFinished.Invoke();

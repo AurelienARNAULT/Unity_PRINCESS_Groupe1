@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameManagerTD3 : MonoBehaviour
@@ -18,10 +19,14 @@ public class GameManagerTD3 : MonoBehaviour
     public AudioClip lowBeep;
     public AudioClip highBeep;
     
-
+    
     private void Awake()
     {
         Debug.Log("Start GameManager");
+        Time.timeScale = 1f;
+        
+        audioSource.Play();
+
         pauseMenu.SetActive(false);
         StartIntro();
     }
