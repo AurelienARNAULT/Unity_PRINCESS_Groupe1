@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad5e3496-092b-4bc1-a784-c1b720bcb72c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Baptiste/Environment/TropicalEnvironment_LITE/TropicalEnvironmentLite_2020.3.0_URP_1.0.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Emilien/Scenes/Finition/Finition.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Emilien/Scenes/Finition/Finition.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Emilien/Scenes/Introduction/Introduction.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Emilien/Scenes/Introduction/Introduction.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Emilien/Scenes/Snake/Snake.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Emilien/Scenes/Snake/Snake.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Thomas/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Thomas/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
-    </list>
+    <list default="true" id="ad5e3496-092b-4bc1-a784-c1b720bcb72c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,6 +38,7 @@
       <workItem from="1680863361733" duration="142000" />
       <workItem from="1680871472135" duration="28000" />
       <workItem from="1680871534591" duration="22000" />
+      <workItem from="1681122905279" duration="27000" />
     </task>
     <servers />
   </component>
