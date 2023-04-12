@@ -21,6 +21,7 @@ public class Snake : MonoBehaviour
     }
 
     private void Update(){
+
         if((Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.UpArrow))  && lastKey!="down"){
             direction = Vector2.up;
             lastKey = "up";
