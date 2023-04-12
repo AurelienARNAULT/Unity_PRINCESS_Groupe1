@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TrackManager : MonoBehaviour
 {
@@ -21,7 +22,15 @@ public class TrackManager : MonoBehaviour
         {
           _currentTrack = (_currentTrack + 1) % Tracks.Length;
 
-          Player.SpawnTo(Tracks[_currentTrack].SpawnPoint.position);
+          if(_currentTrack == 0){
+            Cursor.lockState = CursorLockMode.None;
+            SceneManager.LoadScene(0);
+          }
+          else{
+            Player.SpawnTo(Tracks[_currentTrack].SpawnPoint.position);
+          }
+
+
         }
 
         public void Respawn()

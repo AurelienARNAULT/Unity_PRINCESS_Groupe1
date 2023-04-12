@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad5e3496-092b-4bc1-a784-c1b720bcb72c" name="Changes" comment="" />
+    <list default="true" id="ad5e3496-092b-4bc1-a784-c1b720bcb72c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Baptiste/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Baptiste/Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Baptiste/Scripts/TrackManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Baptiste/Scripts/TrackManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

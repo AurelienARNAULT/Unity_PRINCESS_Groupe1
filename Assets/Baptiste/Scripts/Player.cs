@@ -114,6 +114,7 @@ using TMPro;
                 if (collision.gameObject.CompareTag("Terrain"))
                 {
                     // La balle de golf a touché le terrain, respawn
+                    _rigidbody.velocity = Vector3.zero;
                     TrackManager.Respawn();
                 }
             }
