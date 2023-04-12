@@ -8,6 +8,8 @@ public class SceneLoader : MonoBehaviour
     }
     public void LoadMenu()
     {
+        Cursor.lockState = CursorLockMode.None;
+
         SceneManager.LoadScene(0);
     }
 }

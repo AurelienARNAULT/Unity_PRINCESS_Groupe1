@@ -27,6 +27,8 @@ public class FinishMenuManager : MonoBehaviour
     
     public void mainMenu()
     {
+        Cursor.lockState = CursorLockMode.None;
+
         SceneManager.LoadScene(0);
     }
     

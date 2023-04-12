@@ -22,6 +22,7 @@ public class DetectWall : MonoBehaviour
         }
         }
         if(sceneLoaded){
+            Cursor.lockState = CursorLockMode.None;
             SceneManager.LoadScene(0);
         }
     }

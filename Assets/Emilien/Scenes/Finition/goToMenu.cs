@@ -20,6 +20,8 @@ public class goToMenu : MonoBehaviour
     }
 
     public void allerAuNiveau(){
+        Cursor.lockState = CursorLockMode.None;
+
         SceneManager.LoadScene(0);
     }
 }
