@@ -10,6 +10,7 @@ public class goToMenu : MonoBehaviour
     public string levelToLoad;
 
     public void start(){
+        Time.timeScale = 1f;
         btn = GameObject.Find("Button").GetComponent<Button>();
         btn.onClick.AddListener(ButtonSelected);
     }
