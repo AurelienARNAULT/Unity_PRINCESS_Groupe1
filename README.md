@@ -10,7 +10,16 @@ PERRAUDEAU EMILIEN
 Selon les versions d'unity lorsqu'on import notre projet il peut manquer le package "cinemachine" il faut donc l'installer pour cela : 
 Window -> package Manager -> Changer la cible de la recherche en "Unity Registry" -> taper dans la barre de recherche "cinemachine" puis cliquer en bas a droite sur install.
 Ensuite il faut ajouter au build settings les scènes suivantes dans le bon ordre : 
+-MainMenu/MainMenu                                                    0
+-Aurelien/Scenes/portail/portail                                      1
+-Baptiste/Scenes/Game                                                 2
+-Emilien/Scenes/Introduction/Introduction                             3
+-Thomas/Scenes/SampleScene                                            4
+-Emilien/Scenes/Snake/Snake                                           5
+-Emilien/Scenes/Finition/Finition                                     6
+-Weel/Display room/Scene                                              7
 
+Dans le cas où vous n'arrivez pas a ajouter les scenes dans le bon ordre nous vous avons mis un .exe afin de tester le jeu avec le menu et les boutons qui fonctionnent
 
 
 **FONCTIONNEMENT DU JEU + SOURCES :** 
