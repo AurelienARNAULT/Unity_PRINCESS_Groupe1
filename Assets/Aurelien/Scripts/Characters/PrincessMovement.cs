@@ -3,19 +3,22 @@ using UnityEngine;
 public class PrincessMovement : PortalTraveller
 {
     [SerializeField]
-    private float maximumSpeed;
+    private float maxspeed;
 
     [SerializeField]
     private float rotationSpeed;
 
     [SerializeField]
-    private float jumpSpeed;
+    private float jumpHeight;
 
     [SerializeField]
-    private float jumpButtonGracePeriod;
+    private float gravityMultiplier;
 
     [SerializeField]
     private float jumpHorizontalSpeed;
+
+    [SerializeField]
+    private float jumpButtonGracePeriod;
 
     [SerializeField]
     private Transform cameraTransform;
@@ -28,6 +31,8 @@ public class PrincessMovement : PortalTraveller
     private float? jumpButtonPressedTime;
     private bool isJumping;
     private bool isGrounded;
+    private bool isSliding;
+    private Vector3 slopeSlideVelocity;
 
     // Start is called before the first frame update
     void Start()
@@ -51,12 +56,26 @@ public class PrincessMovement : PortalTraveller
             inputMagnitude *= 2;
         }
 
-        animator.SetFloat("Input Magnitude", inputMagnitude, 0.05f, Time.deltaTime);
+        animator.SetFloat("InputMagnitude", inputMagnitude, 0.05f, Time.deltaTime);
 
         movementDirection = Quaternion.AngleAxis(cameraTransform.rotation.eulerAngles.y, Vector3.up) * movementDirection;
         movementDirection.Normalize();
 
-        ySpeed += Physics.gravity.y * Time.deltaTime;
+        float gravity = Physics.gravity.y * gravityMultiplier;
+
+        if (isJumping && ySpeed > 0 && Input.GetButton("Jump") == false)
+        {
+            gravity *= 2;
+        }
+
+        ySpeed += gravity * Time.deltaTime;
+
+        SetSlopeSlideVelocity();
+
+        if (slopeSlideVelocity == Vector3.zero)
+        {
+            isSliding = false;
+        }
 
         if (characterController.isGrounded)
         {
@@ -70,17 +89,27 @@ public class PrincessMovement : PortalTraveller
 
         if (Time.time - lastGroundedTime <= jumpButtonGracePeriod)
         {
+            if (slopeSlideVelocity != Vector3.zero)
+            {
+                isSliding = true;
+            }
+
             characterController.stepOffset = originalStepOffset;
-            ySpeed = -0.5f;
+
+            if (isSliding == false)
+            {
+                ySpeed = -0.5f;
+            }
+
             animator.SetBool("IsGrounded", true);
             isGrounded = true;
             animator.SetBool("IsJumping", false);
             isJumping = false;
             animator.SetBool("IsFalling", false);
 
-            if (Time.time - jumpButtonPressedTime <= jumpButtonGracePeriod)
+            if (Time.time - jumpButtonPressedTime <= jumpButtonGracePeriod && isSliding == false)
             {
-                ySpeed = jumpSpeed;
+                ySpeed = Mathf.Sqrt(jumpHeight * -3 * gravity);
                 animator.SetBool("IsJumping", true);
                 isJumping = true;
                 jumpButtonPressedTime = null;
@@ -112,23 +141,54 @@ public class PrincessMovement : PortalTraveller
             animator.SetBool("IsMoving", false);
         }
 
-        if (isGrounded == false)
+        if (isGrounded == false && isSliding == false)
         {
-            Vector3 velocity = movementDirection * inputMagnitude * jumpHorizontalSpeed;
-            velocity = AdjustVelocityToSlope(velocity);
+            Vector3 velocity = movementDirection * inputMagnitude * jumpHorizontalSpeed * maxspeed;
+            velocity.y = ySpeed;
+
+            characterController.Move(velocity * Time.deltaTime);
+        }
+
+        if (isSliding)
+        {
+            Vector3 velocity = slopeSlideVelocity;
             velocity.y = ySpeed;
 
             characterController.Move(velocity * Time.deltaTime);
         }
     }
 
+    private void SetSlopeSlideVelocity()
+    {
+        if (Physics.Raycast(transform.position + Vector3.up, Vector3.down, out RaycastHit hitInfo, 5))
+        {
+            float angle = Vector3.Angle(hitInfo.normal, Vector3.up);
+
+            if (angle >= characterController.slopeLimit)
+            {
+                slopeSlideVelocity = Vector3.ProjectOnPlane(new Vector3(0, ySpeed, 0), hitInfo.normal);
+                return;
+            }
+        }
+
+        if (isSliding)
+        {
+            slopeSlideVelocity -= slopeSlideVelocity * Time.deltaTime * 3;
+
+            if (slopeSlideVelocity.magnitude > 1)
+            {
+                return;
+            }
+        }
+
+        slopeSlideVelocity = Vector3.zero;
+    }
+
     private void OnAnimatorMove()
     {
-        //Debug.Log("isGrounded:" + isGrounded);
-        if (isGrounded)
+        if (isGrounded && isSliding == false)
         {
-            Vector3 velocity = animator.deltaPosition * maximumSpeed;
-            velocity = AdjustVelocityToSlope(velocity);
+            Vector3 velocity = animator.deltaPosition * maxspeed;
             velocity.y = ySpeed * Time.deltaTime;
 
             characterController.Move(velocity);
@@ -145,23 +205,5 @@ public class PrincessMovement : PortalTraveller
         {
             Cursor.lockState = CursorLockMode.None;
         }
-    }
-
-    private Vector3 AdjustVelocityToSlope(Vector3 velocity)
-    {
-        var ray = new Ray(transform.position, Vector3.down);
-
-        if (Physics.Raycast(ray, out RaycastHit hitInfo, 0.1f))
-        {
-            var slopeRotation = Quaternion.FromToRotation(Vector3.up, hitInfo.normal);
-            var adjustedVelocity = slopeRotation * velocity;
-
-            if (adjustedVelocity.y < 0)
-            {
-                return adjustedVelocity;
-            }
-        }
-
-        return velocity;
     }
 }
