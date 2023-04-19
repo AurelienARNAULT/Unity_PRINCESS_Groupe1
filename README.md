@@ -93,11 +93,3 @@ Tuto suivi afin de faire la base du snake : https://youtu.be/U8gUnpeaMbQ
 https://assetstore.unity.com/packages/tools/physics/prometeo-car-controller-209444
 https://assetstore.unity.com/packages/3d/environments/urban/low-poly-park-61922
 https://assetstore.unity.com/packages/3d/environments/urban/low-poly-european-city-pack-71042
-
-
-
-
-
-
-
-
