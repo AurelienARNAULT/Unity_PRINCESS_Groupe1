@@ -29,8 +29,9 @@ Ensuite il faut ajouter au build settings les scènes suivantes dans le bon ordr
 -Weel/Display room/Scene                                              7
 
 
-Dans le cas où vous n'arrivez pas a ajouter les scenes dans le bon ordre nous vous avons mis un .exe afin de tester le jeu avec le menu et les boutons qui fonctionnent
+**Dans le cas où vous n'arrivez pas a ajouter les scenes dans le bon ordre nous vous avons mis un .exe afin de tester le jeu avec le menu et les boutons qui fonctionnent**
 
+**Si vous voulez clone notre projet : il se trouve a cette adresse https://github.com/AurelienARNAULT/Unity_PRINCESS_Groupe1**
 
 **FONCTIONNEMENT DU JEU + SOURCES :** 
 
